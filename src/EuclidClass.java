@@ -24,6 +24,22 @@ public class EuclidClass {
                 }
 
             }
+        } else {
+            if ((number2 % number1) != 0) {
+                while (number2 % number1 != 0) {
+                    number3 = number2;
+                    number2 = number1;
+                    number1 = number3%number1;
+                }
+                System.out.println("Наибольший общий делитель равен " + number1);
+            } else {
+                if (number2 >= number2/number1) {
+                    System.out.println("Наибольший общий делитель равен " + number1);
+                } else {
+                    System.out.println("Наибольший общий делитель равен " + number2/number1);
+                }
+
+            }
         }
 
     }
